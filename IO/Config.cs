@@ -10,6 +10,7 @@ namespace MiniBillingServer.IO
     public class Be_Config
     {
         #region binding
+        public String Listen_Address { get; set; }
         public Int32 Listen_Port { get; set; }
         #endregion
 
@@ -70,6 +71,7 @@ namespace MiniBillingServer.IO
                 Be_Config Be_Config = new Be_Config();
 
                 #region binding
+                Be_Config.Listen_Address = IniReadValue("BINDING", "Listen_Address");
                 Be_Config.Listen_Port = int.Parse(IniReadValue("BINDING", "Listen_Port"));
                 #endregion
 
@@ -78,6 +80,7 @@ namespace MiniBillingServer.IO
                 Be_Config.USER_DB = IniReadValue("DATABASE", "USER_DB");
                 Be_Config.PW_DB = IniReadValue("DATABASE", "PASS_DB");
                 Be_Config.ACC_DB = IniReadValue("DATABASE", "ACC_DB");
+
                 #endregion
 
                 #region security

@@ -15,6 +15,13 @@
 ###################################################################################################
 # BINDING SETTINGS
 #
+#    USER
+#        Description: Address in which the system will be listening for connections from Silkroad Online Server Files.
+#        Default:     127.0.0.1
+
+Listen_Address = 127.0.0.1
+
+######
 #    Listen_Port
 #        Description: Port in which the system will be listening for connections from Silkroad Online Server Files.
 #        Default:     8080 - (listening will take place in localhost:8080 by default)

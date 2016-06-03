@@ -6,10 +6,10 @@ This program is aimed for primary for developers and not for productive usage.
 
 ## Setup
 
-* Enter your database credentials into `SilkDB.cs`
+* Change the file config.ini.dist in Settings folder to config.ini at the same folder and set up your settings.
 * Compile
 * and run
-* Set your billing server url to `http://localhost:8080/`
+* Set your billing server url to the address specified in the settings (also, you may just check the console window to see the address listening on)
 
 
 ## Extend
