@@ -57,7 +57,7 @@ namespace MiniBillingServer.Model
         private SilkDB()
         {
             string connetionString = null;
-            connetionString = "Data Source=LINUS\\SQLEXPRESS;Initial Catalog=SRO_VT_ACCOUNT;User ID=sa;Password=admin123";
+            connetionString = "Data Source=" + IO.Config.cfg.HOST_DB + ";Initial Catalog=" + IO.Config.cfg.ACC_DB + ";User ID=" + IO.Config.cfg.USER_DB + ";Password=" + IO.Config.cfg.PW_DB;
             cnn = new SqlConnection(connetionString);
 
             try { 
